@@ -1,4 +1,4 @@
-package dfs_and_bfs;
+package 탐색;
 
 import java.util.*;
 
