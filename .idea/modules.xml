@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Softeer.iml" filepath="$PROJECT_DIR$/.idea/Softeer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Softeer-Java-PS.iml" filepath="$PROJECT_DIR$/Softeer-Java-PS.iml" />
     </modules>
   </component>
 </project>
