@@ -9,18 +9,19 @@ public class BFS {
     // BFS 함수 정의
     public static void bfs(int start) {
         Queue<Integer> q = new LinkedList();
-        q.offer(start);
         visited[start] = true;
+        System.out.print(start + " ");
+        q.offer(start);
 
         while (!q.isEmpty()) {
             int v = q.poll();
-            System.out.print(v + " ");
 
             for (int i = 0; i < graph.get(v).size(); i++) {
                 int next = graph.get(v).get(i);
                 if (!visited[next]) {
-                    q.offer(next);
                     visited[next] = true;
+                    System.out.print(next + " ");
+                    q.offer(next);
                 }
             }
         }
@@ -28,8 +29,8 @@ public class BFS {
 
     public static void main(String[] args) {
         int N = 8; // (최대 8번 노드)
-        for (int i=0; i<N+1; i++) {
-            graph.add(new ArrayList());
+        for (int i = 0; i < N + 1; i++) {
+            graph.add(new ArrayList<Integer>());
         }
 
         // 노드 1에 연결된 노드 정보 저장
